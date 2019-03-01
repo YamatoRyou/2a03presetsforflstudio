@@ -1,0 +1,61 @@
+﻿<html>
+  <head>
+    <title>词汇表 - 2A03 预置 for FL Studio 帮助文档</title>
+    <link rel="stylesheet" href="./layui/css/layui.css"  media="all">
+    <script src="./layui/layui.all.js"></script>
+  </head>
+  <style type="text/css">
+    a {color:#008275}
+    blockquote.layui-elem-quote {font-size:200%; line-height:175%; margin-bottom: 0}
+    .layui-table img {max-width: none}
+    table.layui-table {margin: 0 0 0 0}
+  </style>
+  <body>
+    <blockquote class="layui-elem-quote">词汇表</blockquote>
+    <div style="padding: 10px">
+      <table class="layui-table" lay-size="lg">
+        <thead>
+          <tr>
+            <th>单词</th>
+            <th>说明</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>OP (Operator)</td>
+            <td>运算器, Sytrus 中的基本发生器单位, 可产生波形信号或经过 FM (Frequency Modulation, 频率调制) 或 RM (Ring Modulation, 环形调制) 后的波形信号.</td>
+          </tr>
+          <tr>
+            <td>WS (Wave Shaper)</td>
+            <td>波形整形, Sytrus 中的 WS 模块可以将原始波形进行重塑. 与其相似的插件为 Fruity WaveShaper.</td>
+          </tr>
+          <tr>
+            <td>Click / Declick</td>
+            <td>一个波形的起始触发电平不等于 0db 时会产生不同程度的咔哒声, 它可能会影响瞬时动态范围. 音频流中出现一段恒定的波形偏上或偏下则称为直流偏移 (DCO: Direct Current Offset). Sytrus 的每个 OP 都具备 Declick 开关以尽可能避免此问题.</td>
+          </tr>
+          <tr>
+            <td>Center</td>
+            <td>Sytrus 的每个 OP 都具备 Center 开关以去除直流偏移使波形居中. 请注意: 它并不能使波形的<strong>起始处</strong>居中, 因此触发时可能仍然会出现咔哒声.</td>
+          </tr>
+          <tr>
+            <td>FILT (Filter)</td>
+            <td>滤波器, Sytrus 具备 3 个滤波器对上游信号进行过滤.</td>
+          </tr>
+          <tr>
+            <td>ENV (Envelope)</td>
+            <td>包络, 使用线段 (直线或曲线) 对波形的指定目标随时间流逝进行增加或减小, 可以作用于音量 / 音高 / 声像等.</td>
+          </tr>
+          <tr>
+            <td>ADSR (Attack / Decay / Sustain / Release)</td>
+            <td>分别包括 "起始" / "衰减" / "持续" / "释放", 它们是一个完整包络的组成部分.</td>
+          </tr>
+          <tr>
+            <td>MML (Music macro Language)</td>
+            <td>音乐宏语言, 使用特定格式的字符描述音符长度 / 音量 / 音高, 还可以用一串不连续的数字表示包络或波形.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p align="right"><a href="./2a03presetsforflstudio.html?select=001306" target="_blank">选择器链接</a></p>
+    </div>
+  </body>
+</html>

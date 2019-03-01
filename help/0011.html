@@ -1,0 +1,131 @@
+﻿<html>
+  <head>
+    <title>预置其它细节 - 2A03 预置 for FL Studio 帮助文档</title>
+    <link rel="stylesheet" href="./layui/css/layui.css"  media="all">
+    <script src="./layui/layui.all.js"></script>
+  </head>
+  <style type="text/css">
+    a {color:#008275}
+    blockquote.layui-elem-quote {font-size:200%; line-height:175%; margin-bottom: 0}
+    .layui-table img {max-width: 100%}
+    table.layui-table {margin: 0 0 0 0}
+  </style>
+  <body>
+    <blockquote class="layui-elem-quote">预置其它细节</blockquote>
+    <div style="padding: 10px">
+      <table class="layui-table" lay-size="lg">
+        <colgroup>
+          <col width="150">
+          <col width="200">
+          <col>
+        </colgroup>
+        <thead>
+          <tr>
+            <th>插件</th>
+            <th>重要参数</th>
+            <th>注释</th>
+          </tr> 
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="5">Sytrus</td>
+            <td>DECLICK</td>
+            <td>
+              <p>■ 移除音符起始嘀嗒声 (起始软化).</p>
+            </td>
+          </tr>
+          <tr>
+            <td>B.LIMIT</td>
+            <td>
+              <p>■ 波段限制波形, 用于获得更干净的声音.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>OVERSAMPLING</td>
+            <td>
+              <p>■ 超采样系数, 用于提升波形成型质量, 有效降低 WS 模块产生的噪音, 但会增加 CPU 占用. 通常不超过 16x.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>ENV / LFO</td>
+            <td>
+              <p>■ 音量包络: ATTACK 与 DECAY 处于同一时间可进一步移除音符起始嘀嗒声.</p>
+              <p>■ 长度一致原则: 若其中一个包络 / LFO 已启用, 且它的长度超出其它所有包络 / LFO 的每个原始长度, 则所有 OP 的包络 / LFO 长度与该包络的长度相同. 不再需要该包络 / LFO 或发现音符长度异常应及时禁用.</p>
+              <p>■ 谐波丢失与 B.LIMIT 失效: 当使用通道音高事件; 滑行属性改变音高时, 大幅度滑行将丢失部分谐波; 反之 B.LIMIT 将失效 (除非停用 B.LIMIT 并启用 OVERSAMPLING).</p>
+              <p>■ 以 MML 规则启用音量包络时, 建议酌情减小插件主控音量.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>MOD X / Y</td>
+            <td>
+              <p>■ 主控面板上的 MOD X / Y 参数值会与音符中的 MOD X / Y 属性值叠加 (例如一个音符的 MOD Y 属性值为 -50%, MOD Y 参数值为 100%, 则最终效果等同于 MOD Y 属性值为 0%, MOD Y 参数值为 50%). 该通道中若只有少数音符应用这些效果, 则应将主控面板上的 MOD X / Y 归零.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>FPC</td>
+            <td></td>
+            <td>
+              <p></p>
+            </td>
+          </tr>
+          <tr>
+            <td>Patcher</td>
+            <td></td>
+            <td>
+              <p></p>
+            </td>
+          </tr>
+          <tr>
+            <td>DirectWave</td>
+            <td>最大复音数 (通道设置)</td>
+            <td>
+              <p>■ 在该插件中, 限制最大复音数的情况下快速连奏可能会导致部分音符不响应, 请设置通道最大复音数为允许值的 2 倍. 导致此现象的原因尚不明确.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>Effector</td>
+            <td></td>
+            <td>
+              <p></p>
+            </td>
+          </tr>
+          <tr>
+            <td>WaveShaper</td>
+            <td></td>
+            <td>
+              <p></p>
+            </td>
+          </tr>
+          <tr>
+            <td>DX10</td>
+            <td></td>
+            <td>
+              <p></p>
+            </td>
+          </tr>
+          <tr>
+            <td>Envelope Controller</td>
+            <td></td>
+            <td>
+              <p>■ 插件存在一个莫名其妙的延迟问题, 详见 "Noise L.fst" 的说明.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>Dance</td>
+            <td>跳舞动作</td>
+            <td>
+              <p>■ 该参数在事件编辑器中会随动作表中定义的动作数量产生不平滑的阶梯, 利用此特性可以模拟 MML.</p>
+            </td>
+          </tr>
+          
+          
+          
+          
+          
+          
+        </tbody>
+      </table>
+      <p align="right"><a href="./2a03presetsforflstudio.html?select=0011" target="_blank">选择器链接</a></p>
+    </div>
+  </body>
+</html>

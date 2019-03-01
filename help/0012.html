@@ -1,0 +1,51 @@
+﻿<html>
+  <head>
+    <title>包括关系的比较 - 2A03 预置 for FL Studio 帮助文档</title>
+    <link rel="stylesheet" href="./layui/css/layui.css"  media="all">
+    <script src="./layui/layui.all.js"></script>
+  </head>
+  <style type="text/css">
+    a {color:#008275}
+    blockquote.layui-elem-quote {font-size:200%; line-height:175%; margin-bottom: 0}
+    .layui-table img {max-width: 100%}
+    table.layui-table {margin: 0 0 0 0}
+  </style>
+  <body>
+    <blockquote class="layui-elem-quote">包括关系的比较</blockquote>
+    <div style="padding: 10px">
+      <table class="layui-table" lay-size="lg">
+        <thead>
+          <tr>
+            <th>控制范围最小</th>
+            <th colspan="5">
+              <p align="center">从左到右, 后者始终叠加影响所有前者的 "听感值 (听上去增加 / 减小 / 升高 / 降低)", 但不会更改所有前者的参数值. 以此类推.</p>
+              <p align="center">例如减小通道音量的同时会减小插件主音量的听感值; 音量包络 / LFO 设置的音量听感值以及音符力度的听感值.</p>
+            </th>
+            <th>控制范围最大</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>音符力度</td>
+            <td>音量包络 / LFO (矫音器)</td>
+            <td>插件主音量</td>
+            <td>通道音量</td>
+            <td>混音器输出音量 (效果器)</td>
+            <td>混音器输出音量 (Master)</td>
+            <td>主控音量 (工程全局)</td>
+          </tr>
+          <tr>
+            <td>音符音高</td>
+            <td>音高包络 / LFO (矫音器)</td>
+            <td>插件主音高</td>
+            <td>通道音高</td>
+            <td>----</td>
+            <td>----</td>
+            <td>主控音高 (工程全局)</td>
+          </tr>
+        </tbody>
+      </table>
+      <p align="right"><a href="./2a03presetsforflstudio.html?select=0012" target="_blank">选择器链接</a></p>
+    </div>
+  </body>
+</html>

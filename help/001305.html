@@ -1,0 +1,29 @@
+﻿<html>
+  <head>
+    <title>缓解因 Envelope Controller 导致的残留 - 2A03 预置 for FL Studio 帮助文档</title>
+    <link rel="stylesheet" href="./layui/css/layui.css"  media="all">
+    <script src="./layui/layui.all.js"></script>
+  </head>
+  <style type="text/css">
+    a {color:#008275}
+    blockquote.layui-elem-quote {font-size:200%; line-height:175%; margin-bottom: 0}
+    .layui-table img {max-width: none}
+  </style>
+  <body>
+    <blockquote class="layui-elem-quote">缓解因 Envelope Controller 导致的残留</blockquote>
+    <div style="padding: 10px">
+      <p>■ 工程编排完毕后, 可将 Noise L 预置中的音色 / 力度变化进行录制并转换为事件, 以缓解听觉上的音头残留.</p>
+      <p>0. 所需的预置全部位于 Solutions\Noise L.</p>
+      <p>1. 将工程中的 Noise L 通道替换为采样器通道.</p>
+      <p>2. 使用 Envelope Controller.fst 将采样器通道替换为 Envelope Controller.</p>
+      <p>3. 将 Noise L (Mixer).fst 插入混音器任意轨.</p>
+      <p>4. Lo-Fi (Effector) 中的参数 X 连接到 Envelope Controller 矫音器 1, 并点亮 "录制自动控制".</p>
+      <p>5. Post Gain (WaveShaper) 中的 POST 连接到 Envelope Controller 矫音器 2, 并点亮 "录制自动控制".</p>
+      <p>6. 点亮录制按钮, 并只保留自动控制为要录制的数据类型.</p>
+      <p>7. 在播放列表上放在放置一个与歌曲长度相同的空白样式, 并在样式选择器选中.</p>
+      <p>8. 开始播放, 过程中可以按住 Num 0 快进.</p>
+      <p>9. 工程播放完毕后停止, 使用 White Noise.fst 将 Envelope Controller 通道替换为 Sytrus, 并将该通道链接到 Effector 与 WaveShaper 共同所在的混音器音轨.</p>
+      <p align="right"><a href="./2a03presetsforflstudio.html?select=001305" target="_blank">选择器链接</a></p>
+    </div>
+  </body>
+</html>

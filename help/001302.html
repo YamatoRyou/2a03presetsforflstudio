@@ -1,0 +1,32 @@
+﻿<html>
+  <head>
+    <title>处理负值并在 MML2FNV 中转换 - 2A03 预置 for FL Studio 帮助文档</title>
+    <link rel="stylesheet" href="./layui/css/layui.css"  media="all">
+    <script src="./layui/layui.all.js"></script>
+  </head>
+  <style type="text/css">
+    a {color:#008275}
+    blockquote.layui-elem-quote {font-size:200%; line-height:175%; margin-bottom: 0}
+  </style>
+  <body>
+    <blockquote class="layui-elem-quote">处理负值并在 MML2FNV 中转换</blockquote>
+    <div style="padding: 10px">
+      <p>■ 需要准备以下软件:</p>
+      <p>1. Notepad2 等文本编辑器</p>
+      <p>2. Excel</p>
+      <br>
+      <p>■ 步骤:</p>
+      <p>1. 将得到的 MML 字串粘贴到 Notepad2 等文本编辑器中;</p>
+      <p>2. 将所有空格 (16 进制: 20) 替换为 Windows 回车符 (16 进制: 0D0A; 转义: \r\n), 处理完成后每个值占用 1 行;</p>
+      <p>3. 将处理后的文本粘贴到 Excel 中第 A 列;</p>
+      <p>4. 选中第 B 列的所有单元格 (具体数量取决于第 A 列的有效单元格数量. 例如第 A 列从 A1 ~ A253 共填充了 253 个单元格, 则选择第 B 列选择 B1 ~ B253);</p>
+      <p>5. 请先确定这些数值的范围, 然后在公式栏键入能容纳这些数值的最大值 (例如 MML范围从-128 ~ 127, 则公式栏填 127), 并按 Ctrl + 回车键, 第 B 列的每个被选择的单元格将会被刚才键入的值填充;</p>
+      <p>6. 复制第 B 列的单元格, 并再次选中第 A 列的所有有效单元格. 鼠标右键菜单上选择 "选择性粘贴";</p>
+      <p>7. 弹出的窗口中, 运算部分选择 "加", 单击 "确定";</p>
+      <p>8. 再次复制处理后的第 A 列,粘贴到 Notepad2;</p>
+      <p>9. 将所有 Windows 平台回车符 (16 进制: 0D0A; 转义: \r\n) 替换为空格 (16 进制: 20);</p>
+      <p>10. 粘贴到 MML2FNV, 单击 "开始".</p>
+      <p align="right"><a href="./2a03presetsforflstudio.html?select=001302" target="_blank">选择器链接</a></p>
+    </div>
+  </body>
+</html>
