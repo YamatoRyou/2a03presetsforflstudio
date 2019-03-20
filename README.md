@@ -1,1 +1,3 @@
-# 2a03presetsforflstudio
+# 关于本项目  
+* 2A03 预置 for FL Studio  
+* 当前尚未正式发布预置, 手册仍在更新.  
