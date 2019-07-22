@@ -34,7 +34,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr style="background-color: #880000">
             <td>2A03.fst</td>
             <td>Sytrus</td>
             <td>FLi/VSTi</td>
@@ -82,8 +82,8 @@
               <p>MOD Y (Vibrato 效果) <span style="color: ff0000"> ● ☍</span></p>
             </td>
           </tr>
-          <tr>
-            <td>Noise L.fst</td>
+          <tr style="background-color: #880000">
+            <td>Noise L (Old, Effectot + WS).fst</td>
             <td>
               <p>Patcher</p>
               <p>Envelope Controller</p>
@@ -104,6 +104,7 @@
               <p>■ Sytrus 在 Patcher 中作为白噪发生器. 与 2A03 芯片的噪波发生器不同的是 Sytrus 产生的噪波完全随机, 因此不会出现 2A03 噪波发生器中重复片段的现象.</p>
               <p>■ 此预置不允许使用任何包络或滑行属性.</p>
               <p>■ 此预置无法正确响应长度小于 1/8 步的音符.</p>
+              <p>■ 此预置存在的问题较多且难以修复, 现已不推荐使用.</p>
             </td>
             <td>
               <p>音符力度 <span style="color: ff0000"> ♫ ◢</span></p>
@@ -113,7 +114,57 @@
             </td>
           </tr>
           <tr>
-            <td>Noise L v2.fst</td>
+            <td>Noise L (Sytrus x16 in Patcher).fst</td>
+            <td>
+              <p>Patcher</p>
+              <p>Sytrus</p>
+            </td>
+            <td>
+              <p>FLi</p>
+              <p>FLi/VSTi</p>
+            </td>
+            <td>
+              <p>模拟 2A03 芯片噪波 (long cycle 类型, 32767 个采样点).</p>
+              <p>■ 定义波形的矫音器位于 FILT 1 ---> WS.</p>
+              <p>■ 定义音量包络的矫音器位于 FILT 2 ---> VOL ---> ENV.</p>
+              <p>■ 定义音高包络的矫音器位于 OP 1 ---> PITCH ---> ENV.</p>
+              <p>■ 为了在每首歌曲中产生听觉上的差异, 用户需要创建不同的噪波外形. 可以使用 MML2FNV 完成需求.</p>
+              <p>■ 该预置包含 16 个 Sytrus 的设置, 上述调整需分别为这些插件设置.</p>
+            </td>
+            <td>
+              <p>音符力度 <span style="color: ff0000"> ♫ ◢</span></p>
+              <p>音符音高 <span style="color: ff0000"> ♫ ◢</span></p>
+              <p>通道音量 <span style="color: ff0000"> ● ☍</span></p>
+              <p>通道音高 <span style="color: ff0000"> ● ☍</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>Noise S (Sytrus x16 in Patcher).fst</td>
+            <td>
+              <p>Patcher</p>
+              <p>Sytrus</p>
+            </td>
+            <td>
+              <p>FLi</p>
+              <p>FLi/VSTi</p>
+            </td>
+            <td>
+              <p>模拟 2A03 芯片噪波 (short cycle 类型, 93 个采样点).</p>
+              <p>■ 定义波形的矫音器位于 FILT 1 ---> WS.</p>
+              <p>■ 定义音量包络的矫音器位于 FILT 2 ---> VOL ---> ENV.</p>
+              <p>■ 定义音高包络的矫音器位于 OP 1 ---> PITCH ---> ENV.</p>
+              <p>■ 为了在每首歌曲中产生听觉上的差异, 用户需要创建不同的噪波外形. 可以使用 MML2FNV 完成需求.</p>
+              <p>■ 该预置包含 16 个 Sytrus 的设置, 上述调整需分别为这些插件设置.</p>
+            </td>
+            <td>
+              <p>音符力度 <span style="color: ff0000"> ♫ ◢</span></p>
+              <p>音符音高 <span style="color: ff0000"> ♫ ◢</span></p>
+              <p>通道音量 <span style="color: ff0000"> ● ☍</span></p>
+              <p>通道音高 <span style="color: ff0000"> ● ☍</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>Noise L (Free).fst</td>
             <td>
               <p>Sytrus</p>
             </td>
@@ -126,7 +177,7 @@
               <p>■ 定义音量包络的矫音器位于 FILT 2 ---> VOL ---> ENV.</p>
               <p>■ 定义音高包络的矫音器位于 OP 1 ---> PITCH ---> ENV.</p>
               <p>■ 为了在每首歌曲中产生听觉上的差异, 用户需要创建不同的噪波外形. 可以使用 MML2FNV 完成需求.</p>
-              <p>■ 频率与键位相关映射见 "噪波预置键位; 音高与事件编辑器对照表".</p>
+              <p>■ 此预置适用于需要手动滑音的场合, 频率与键位相关映射见 "噪波预置键位; 音高与事件编辑器对照表".</p>
             </td>
             <td>
               <p>音符力度 <span style="color: ff0000"> ♫ ◢</span></p>
@@ -136,7 +187,7 @@
             </td>
           </tr>
           <tr>
-            <td>Noise S.fst</td>
+            <td>Noise S (Free).fst</td>
             <td>Sytrus</td>
             <td>FLi/VSTi</td>
             <td>
@@ -145,7 +196,7 @@
               <p>■ 定义音量包络的矫音器位于 FILT 2 ---> VOL ---> ENV.</p>
               <p>■ 定义音高包络的矫音器位于 OP 1 ---> PITCH ---> ENV.</p>
               <p>■ 为了在每首歌曲中产生听觉上的差异, 用户需要创建不同的噪波外形. 可以使用 MML2FNV 完成需求.</p>
-              <p>■ 频率与键位相关映射见 "噪波预置键位; 音高与事件编辑器对照表".</p>
+              <p>■ 此预置适用于需要手动滑音的场合, 频率与键位相关映射见 "噪波预置键位; 音高与事件编辑器对照表".</p>
             </td>
             <td>
               <p>音符力度 <span style="color: ff0000"> ♫ ◢</span></p>
@@ -154,7 +205,7 @@
               <p>通道音高 <span style="color: ff0000"> ● ☍</span></p>
             </td>
           </tr>
-          <tr>
+          <tr style="background-color: #880000">
             <td>DPCM.fst</td>
             <td>FPC</td>
             <td>FLi</td>
