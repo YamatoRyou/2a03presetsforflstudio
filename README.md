@@ -2,3 +2,10 @@
 * 本框架提供了一些预置和工具, 可以让创作者在 FL Studio 中不依赖第三方插件制作 8-Bit (Famicom 类型) 音乐.  
 * 预置已初步整理完毕, 预置文件见 2A03 Presets for FL Studio (11.1.0) 文件夹.  
 * 帮助文档地址: https://yamatoryou.github.io/2a03presetsforflstudio/help/2a03presetsforflstudio.html  
+
+# 例程  
+* https://www.bilibili.com/video/av56439244  
+* https://www.bilibili.com/video/av53864100  
+* https://www.bilibili.com/video/av50213822  
+* https://www.bilibili.com/video/av30291209  
+* https://www.bilibili.com/video/av19931720  
