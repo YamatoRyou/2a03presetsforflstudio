@@ -4,5 +4,6 @@
 * exe 可能会被一些杀毒软件报毒, 如有顾虑请在虚拟机下使用.  
 * 帮助文档地址: https://yamatoryou.github.io/2a03presetsforflstudio/help/2a03presetsforflstudio.html  
 
-# 在线观看演示工程  
-* https://www.bilibili.com/video/av711030011/  
+# 示例工程  
+* 在线观看: https://www.bilibili.com/video/av711030011/  
+* 直接获取 :https://github.com/YamatoRyou/2a03presetsforflstudio/tree/master/2A03%20Presets%20for%20FL%20Studio%20(11.1.0)/Tutorials  
