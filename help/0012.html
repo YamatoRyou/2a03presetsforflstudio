@@ -1,6 +1,6 @@
 ﻿<html>
   <head>
-    <title>前后置关系 - 2A03 预置 for FL Studio 帮助文档</title>
+    <title>避免因素相乘 - 2A03 预置 for FL Studio 帮助文档</title>
     <link rel="stylesheet" href="./layui/css/layui.css"  media="all">
     <script src="./layui/layui.all.js"></script>
   </head>
@@ -11,21 +11,23 @@
     table.layui-table {margin: 0 0 0 0}
   </style>
   <body>
-    <blockquote class="layui-elem-quote">前后置关系</blockquote>
+    <blockquote class="layui-elem-quote">因素相乘</blockquote>
     <div style="padding: 10px">
       <table class="layui-table" lay-size="lg">
         <thead>
           <tr>
-            <th>最前置</th>
-            <th colspan="5">
-              <p align="center">从左到右, 后者始终叠加影响所有前者的 "听感值 (听上去增加 / 减小 / 升高 / 降低)", 但不会更改所有前者的参数值. 以此类推.</p>
-              <p align="center">例如减小通道音量的同时会减小插件主音量的听感值; 音量包络 / LFO 设置的音量听感值以及音符力度的听感值.</p>
+            <th>类别</th>
+            <th colspan="7">
+              <p align="center">在 FL Studio 中有多种因素共同决定音符的音量或音高. 要使某种因素成为决定音量或音高的唯一因素, 请将除此之外的因素设为默认或最大值.</p>
+              <p align="center">简而言之, 此处表格遵循的是 FamiTracker 的思维, 例如一个音符的最终音量为 50%, 决定该结果的只能是一种因素.</p>
+              <p align="center">算法示例 1: 最终音量 50% = 音符力度 (50%) * 插件主音量 (100%) * 通道音量 (100%) * 混音器输出音量 (100%) * 主控音量 (工程全局, 100%)</p>
+              <p align="center">算法示例 2: 最终音高 C5 = 音符音高 (C5) * 音符微调音高 (50%, 0 音分, 居中) * 插件主音高 (50%, 0 音分, 居中) * 通道音高 (50%, 0 音分, 居中) * 主控音高 (工程全局, 50%, 0 音分, 居中)</p>
             </th>
-            <th>最后置</th>
           </tr>
         </thead>
         <tbody>
           <tr>
+            <td>音量</td>
             <td>音符力度</td>
             <td>音量包络 / LFO (矫音器)</td>
             <td>插件主音量</td>
@@ -35,6 +37,7 @@
             <td>主控音量 (工程全局)</td>
           </tr>
           <tr>
+            <td>音高</td>
             <td>音符音高及音符微调音高</td>
             <td>音高包络 / LFO (矫音器)</td>
             <td>插件主音高</td>

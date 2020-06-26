@@ -1,6 +1,6 @@
 ﻿<html>
   <head>
-    <title>缓解因 Envelope Controller 导致的残留 - 2A03 预置 for FL Studio 帮助文档</title>
+    <title>PPQ 的重要性 - 2A03 预置 for FL Studio 帮助文档</title>
     <link rel="stylesheet" href="./layui/css/layui.css"  media="all">
     <script src="./layui/layui.all.js"></script>
   </head>
@@ -10,19 +10,19 @@
     .layui-table img {max-width: none}
   </style>
   <body>
-    <blockquote class="layui-elem-quote">缓解因 Envelope Controller 导致的残留</blockquote>
+    <blockquote class="layui-elem-quote">PPQ 的重要性</blockquote>
     <div style="padding: 10px">
-      <p>■ 工程编排完毕后, 可将 Noise L 预置中的音色 / 力度变化进行录制并转换为事件, 以缓解听觉上的音头残留.</p>
-      <p>0. 所需的预置全部位于 Solutions\Noise L.</p>
-      <p>1. 将工程中的 Noise L 通道替换为采样器通道.</p>
-      <p>2. 使用 Envelope Controller.fst 将采样器通道替换为 Envelope Controller.</p>
-      <p>3. 将 Noise L (Mixer).fst 插入混音器任意轨.</p>
-      <p>4. Lo-Fi (Effector) 中的参数 X 连接到 Envelope Controller 矫音器 1, 并点亮 "录制自动控制".</p>
-      <p>5. Post Gain (WaveShaper) 中的 POST 连接到 Envelope Controller 矫音器 2, 并点亮 "录制自动控制".</p>
-      <p>6. 点亮录制按钮, 并只保留自动控制为要录制的数据类型.</p>
-      <p>7. 在播放列表上放在放置一个与歌曲长度相同的空白样式, 并在样式选择器选中.</p>
-      <p>8. 开始播放, 过程中可以按住 Num 0 快进.</p>
-      <p>9. 工程播放完毕后停止, 使用 White Noise.fst 将 Envelope Controller 通道替换为 Sytrus, 并将该通道链接到 Effector 与 WaveShaper 共同所在的混音器音轨.</p>
+      <p>■ PPQ 将决定以下参数的精确度 (可以理解为每拍的 "帧数").</p>
+      <p>1. 事件</p>
+      <p>2. 音符</p>
+      <p>3. Sytrus 中所有包络的时间精度</p>
+      <p>4. 一些未列出, 本框架不使用但事实存在的其它参数</p>
+      <p>■ PPQ 越高, 除上述参数外, CPU 占用也会越高.</p>
+      <p>■ 创作的第一步, 我推荐降低 PPQ 到 24, 这么做有助于最终作品听上去更像 Chiptune.</p>
+      <p>■ 当 PPQ 及 BPM 各为 60 时, 可以认为当前工程模拟了 2A03 的运行帧率 (2A07 为 50).</p>
+      <p>■ 然而现实并不会这么美好, 因为创作过程中 BPM 是创作者严重依赖的参数之一, 无法根据 BPM 确定绝对正确的 PPQ 而只能选择一个相对适合的值.</p>
+      <p>■ BPM 还会决定 "每帧" 的持续时间, 例如 PPQ 及 BPM 各为 60 时, 每帧时间为 16.6666666666667 毫秒.</p>
+      <p>■ 对帧率的绝对模拟可以参考示例工程 Moster in My Pocket - Stage 4.flp, 当然非常不推荐这种手法, 除非创作者确定当前歌曲 BPM 为 60 (或等效的 120), 否则整个工程的节拍与 FL Studio 中显示的栅格无法对齐.</p>
       <p align="right"><a href="./2a03presetsforflstudio.html?select=001305" target="_blank">选择器链接</a></p>
     </div>
   </body>
