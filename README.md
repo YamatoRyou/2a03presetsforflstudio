@@ -4,9 +4,5 @@
 * exe 可能会被一些杀毒软件报毒, 如有顾虑请在虚拟机下使用.  
 * 帮助文档地址: https://yamatoryou.github.io/2a03presetsforflstudio/help/2a03presetsforflstudio.html  
 
-# 例程  
-* https://www.bilibili.com/video/av56439244  
-* https://www.bilibili.com/video/av53864100  
-* https://www.bilibili.com/video/av50213822  
-* https://www.bilibili.com/video/av30291209  
-* https://www.bilibili.com/video/av19931720  
+# 在线观看演示工程  
+* https://www.bilibili.com/video/av711030011/  
